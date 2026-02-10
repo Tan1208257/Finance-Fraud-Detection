@@ -28,3 +28,14 @@ The system is designed to follow **modern cloud-based data engineering principle
 - Apply **performance analysis (Little’s Law)**
 - Demonstrate **scalability, fault tolerance, and monitoring**
 - Deliver a **working, documented system**
+
+## GCP Setup (One-Time)
+
+1. Install Google Cloud SDK  
+https://cloud.google.com/sdk/docs/install
+
+2. Authenticate
+```bash
+gcloud init
+gcloud auth application-default login
+
