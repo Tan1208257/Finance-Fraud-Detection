@@ -1,0 +1,129 @@
+2026-02-10 13:45:32,323 | INFO | generator | Generating finance tick data...
+2026-02-10 13:45:32,323 | INFO | generator | Target: 1200 records/hour for 6 hours
+2026-02-10 13:45:32,343 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_06.csv
+2026-02-10 13:45:32,355 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_07.csv
+2026-02-10 13:45:32,368 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_08.csv
+2026-02-10 13:45:32,381 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_09.csv
+2026-02-10 13:45:32,395 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_10.csv
+2026-02-10 13:45:32,408 | INFO | generator | Wrote 1206 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260210_11.csv
+2026-02-10 13:45:32,408 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-10 13:48:14,443 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 13:48:21,260 | INFO | producer | Done producing: 1206 messages
+2026-02-10 13:51:23,709 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 13:51:30,481 | INFO | producer | Done producing: 1206 messages
+2026-02-10 13:56:07,367 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 13:56:14,134 | INFO | producer | Done producing: 1206 messages
+2026-02-10 14:01:20,834 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 14:01:27,612 | INFO | producer | Done producing: 1206 messages
+2026-02-10 14:25:38,659 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 14:25:45,380 | INFO | producer | Done producing: 1206 messages
+2026-02-10 14:33:56,986 | INFO | producer | Producing 1206 messages from ticks_20260210_11.csv to topic=finance_ticks bootstrap=localhost:9092
+2026-02-10 14:34:03,862 | INFO | producer | Done producing: 1206 messages
+2026-02-10 15:24:44,326 | INFO | [clean_validate] Reading 6 raw CSV files from C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-10 15:24:44,389 | INFO | [clean_validate] Clean rows: 7128/7236 (dropped 108)
+2026-02-10 15:24:44,390 | INFO | [clean_validate] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-10 15:24:51,210 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-10 15:24:51,211 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=24)
+2026-02-10 15:24:57,138 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-10 15:24:57,138 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=24)
+2026-02-10 15:25:02,144 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-10 15:25:02,145 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=0 kept from 24)
+2026-02-10 15:27:38,983 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-10 15:27:38,983 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=24)
+2026-02-10 15:27:44,006 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-10 15:27:44,006 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=12 kept from 24)
+2026-02-10 15:27:58,159 | INFO | [train_model] Accuracy: 0.6667
+2026-02-10 15:27:58,159 | INFO | [train_model] Saved model: C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model.joblib
+2026-02-10 15:27:58,159 | INFO | [train_model] Saved meta:  C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model_meta.json
+2026-02-10 15:28:18,869 | INFO | [batch_predict] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\predictions\predictions_20260210_142818.csv (rows=4)
+2026-02-11 11:23:08,275 | INFO | [clean_validate] Reading 6 raw CSV files from C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 11:23:08,357 | INFO | [clean_validate] Clean rows: 7128/7236 (dropped 108)
+2026-02-11 11:23:08,357 | INFO | [clean_validate] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 11:23:15,719 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 11:23:15,719 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=24)
+2026-02-11 11:23:21,879 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-11 11:23:21,879 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=12 kept from 24)
+2026-02-11 11:23:29,232 | INFO | [train_model] Accuracy: 0.6667
+2026-02-11 11:23:29,233 | INFO | [train_model] Saved model: C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model.joblib
+2026-02-11 11:23:29,233 | INFO | [train_model] Saved meta:  C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model_meta.json
+2026-02-11 11:23:35,674 | INFO | [batch_predict] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\predictions\predictions_20260211_102335.csv (rows=4)
+2026-02-11 13:53:45,310 | INFO | generator | Generating finance tick data...
+2026-02-11 13:53:45,311 | INFO | generator | Target: 1000 records/hour for 6 hours
+2026-02-11 13:53:45,338 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_06.csv
+2026-02-11 13:53:45,349 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_07.csv
+2026-02-11 13:53:45,360 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_08.csv
+2026-02-11 13:53:45,374 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_09.csv
+2026-02-11 13:53:45,385 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_10.csv
+2026-02-11 13:53:45,396 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_11.csv
+2026-02-11 13:53:45,396 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:19:54,583 | INFO | generator | Generating finance tick data...
+2026-02-11 14:19:54,584 | INFO | generator | Target: 1000 records/hour for 6 hours
+2026-02-11 14:19:54,601 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_07.csv
+2026-02-11 14:19:54,613 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_08.csv
+2026-02-11 14:19:54,624 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_09.csv
+2026-02-11 14:19:54,635 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_10.csv
+2026-02-11 14:19:54,647 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_11.csv
+2026-02-11 14:19:54,657 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_12.csv
+2026-02-11 14:19:54,657 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:20:02,377 | INFO | [clean_validate] Reading 13 raw CSV files from C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:20:02,504 | INFO | [clean_validate] Clean rows: 14058/14271 (dropped 213)
+2026-02-11 14:20:02,504 | INFO | [clean_validate] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:20:08,241 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:20:08,241 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=52)
+2026-02-11 14:20:13,819 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-11 14:20:13,819 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=40 kept from 52)
+2026-02-11 14:20:20,091 | INFO | [train_model] Accuracy: 0.5000
+2026-02-11 14:20:20,091 | INFO | [train_model] Saved model: C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model.joblib
+2026-02-11 14:20:20,091 | INFO | [train_model] Saved meta:  C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model_meta.json
+2026-02-11 14:20:24,460 | INFO | [batch_predict] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\predictions\predictions_20260211_132024.csv (rows=4)
+2026-02-11 14:22:22,652 | INFO | generator | Generating finance tick data...
+2026-02-11 14:22:22,652 | INFO | generator | Target: 1000 records/hour for 6 hours
+2026-02-11 14:22:22,666 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_07.csv
+2026-02-11 14:22:22,678 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_08.csv
+2026-02-11 14:22:22,690 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_09.csv
+2026-02-11 14:22:22,702 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_10.csv
+2026-02-11 14:22:22,713 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_11.csv
+2026-02-11 14:22:22,726 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_12.csv
+2026-02-11 14:22:22,726 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:22:55,759 | INFO | [clean_validate] Reading 13 raw CSV files from C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:22:55,859 | INFO | [clean_validate] Clean rows: 14058/14271 (dropped 213)
+2026-02-11 14:22:55,863 | INFO | [clean_validate] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:23:36,700 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-11 14:23:36,700 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=40 kept from 52)
+2026-02-11 14:24:22,472 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:24:22,473 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=52)
+2026-02-11 14:24:37,414 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-11 14:24:37,415 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=40 kept from 52)
+2026-02-11 14:24:43,427 | INFO | [train_model] Accuracy: 0.7500
+2026-02-11 14:24:43,427 | INFO | [train_model] Saved model: C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model.joblib
+2026-02-11 14:24:43,427 | INFO | [train_model] Saved meta:  C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model_meta.json
+2026-02-11 14:25:21,506 | INFO | [batch_predict] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\predictions\predictions_20260211_132521.csv (rows=4)
+2026-02-11 14:25:41,543 | INFO | [clean_validate] Reading 13 raw CSV files from C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:25:41,657 | INFO | [clean_validate] Clean rows: 14058/14271 (dropped 213)
+2026-02-11 14:25:41,657 | INFO | [clean_validate] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:25:42,098 | INFO | [aggregate] Input: C:\Users\Asus\Desktop\de2-final-project\data\clean\ticks_clean.csv
+2026-02-11 14:25:42,098 | INFO | [aggregate] Output: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv (rows=52)
+2026-02-11 14:25:42,510 | INFO | [features] Input: C:\Users\Asus\Desktop\de2-final-project\data\analytics\hourly_analytics.csv
+2026-02-11 14:25:42,510 | INFO | [features] Output: C:\Users\Asus\Desktop\de2-final-project\data\features\features.csv (rows=40 kept from 52)
+2026-02-11 14:25:43,912 | INFO | [train_model] Accuracy: 0.7500
+2026-02-11 14:25:43,912 | INFO | [train_model] Saved model: C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model.joblib
+2026-02-11 14:25:43,912 | INFO | [train_model] Saved meta:  C:\Users\Asus\Desktop\de2-final-project\data\models\rf_model_meta.json
+2026-02-11 14:25:45,147 | INFO | [batch_predict] Wrote: C:\Users\Asus\Desktop\de2-final-project\data\predictions\predictions_20260211_132545.csv (rows=4)
+2026-02-11 14:30:29,404 | INFO | generator | Generating finance tick data...
+2026-02-11 14:30:29,405 | INFO | generator | Target: 1000 records/hour for 6 hours
+2026-02-11 14:30:29,418 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_07.csv
+2026-02-11 14:30:29,432 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_08.csv
+2026-02-11 14:30:29,443 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_09.csv
+2026-02-11 14:30:29,456 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_10.csv
+2026-02-11 14:30:29,466 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_11.csv
+2026-02-11 14:30:29,478 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_12.csv
+2026-02-11 14:30:29,478 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input
+2026-02-11 14:31:04,802 | INFO | generator | Generating finance tick data...
+2026-02-11 14:31:04,802 | INFO | generator | Target: 1000 records/hour for 6 hours
+2026-02-11 14:31:04,816 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_07.csv
+2026-02-11 14:31:04,830 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_08.csv
+2026-02-11 14:31:04,841 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_09.csv
+2026-02-11 14:31:04,852 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_10.csv
+2026-02-11 14:31:04,863 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_11.csv
+2026-02-11 14:31:04,874 | INFO | generator | Wrote 1005 rows to C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input\ticks_20260211_12.csv
+2026-02-11 14:31:04,874 | INFO | generator | Done. Raw batch files are in C:\Users\Asus\Desktop\de2-final-project\data\raw\batch_input

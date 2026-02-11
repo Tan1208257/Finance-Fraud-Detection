@@ -1,0 +1,13 @@
+{
+  "model_type": "RandomForestClassifier",
+  "feature_cols": [
+    "avg_price",
+    "total_volume",
+    "trades",
+    "return_1h",
+    "ma_3",
+    "vol_3"
+  ],
+  "target_col": "label_up_next",
+  "accuracy": 0.75
+}

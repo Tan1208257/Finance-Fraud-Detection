@@ -1,0 +1,8 @@
+pandas==2.2.2
+numpy==1.26.4
+faker==25.2.0
+kafka-python==2.0.2
+scikit-learn==1.4.2
+joblib==1.4.2
+flask==3.0.3
+python-dotenv==1.0.1
