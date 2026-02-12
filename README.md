@@ -304,17 +304,6 @@ Tables:
 
 ---
 
-#  Demo Flow (For Presentation)
-
-1. Generate data
-2. Run batch pipeline
-3. Show BigQuery tables
-4. Show GCS raw files
-5. Start API
-6. Run live prediction
-
----
-
 #  Scaling
 
 To increase training volume:
@@ -327,11 +316,6 @@ Architecture requires no changes.
 
 ---
 
-#  Final Status
 
-✔ End-to-End Working System
-✔ Cloud Integrated
-✔ ML Integrated
-✔ Meets Assignment Requirements
 
 
