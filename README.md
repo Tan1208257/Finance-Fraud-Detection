@@ -269,9 +269,11 @@ Response:
 ```
 
 ---
-Streamlit Fraud Detection Dashboard
+# Streamlit Fraud Detection Dashboard
+
 The system includes an interactive fraud/anomaly detection dashboard built with Streamlit.
 Start Dashboard
+
 From project root:
 
 ```bash
