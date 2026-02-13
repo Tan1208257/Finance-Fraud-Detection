@@ -1,15 +1,19 @@
+#standard library imports
 from __future__ import annotations
 from datetime import datetime, timedelta, timezone
 import argparse
 import random
 
+#Third party imports
 import numpy as np
 import pandas as pd
 from faker import Faker
 
+#Project specific imports
 from src.config import settings
 from src.utils import ensure_dir, get_logger
 
+#faker is used to generate realistic looking UUID
 fake = Faker()
 
 def generate_hour(symbols: list[str], start_ts: datetime, n: int) -> pd.DataFrame:
