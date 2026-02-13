@@ -242,7 +242,7 @@ print('Uploaded', len(df), 'rows')
 Start server:
 
 ```bash
-python api/app.py
+python app.py
 ```
 
 Health check:
@@ -277,7 +277,7 @@ Start Dashboard
 From project root:
 
 ```bash
-streamlit run api/app.py
+streamlit run app.py
 ```
 ---
 
