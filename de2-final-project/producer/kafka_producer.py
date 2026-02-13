@@ -7,6 +7,7 @@ from kafka import KafkaProducer
 from src.config import settings
 from src.utils import ensure_dir, get_logger, to_json
 
+# Converts the generated data into csv files 
 def latest_file(folder: Path) -> Path:
     files = sorted(folder.glob("ticks_*.csv"))
     if not files:
@@ -24,6 +25,7 @@ def main(sleep_ms: int = 10) -> None:
         acks="all",
         retries=5,
     )
+# ack=all
 
     fp = latest_file(settings.data_raw_batch)
     df = pd.read_csv(fp)
