@@ -277,6 +277,10 @@ Start Dashboard
 From project root:
 
 ```bash
+pip install streamlit pandas
+```
+
+```bash
 streamlit run api/app.py
 ```
 ---
